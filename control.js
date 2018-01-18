@@ -1,3 +1,4 @@
-var myAppModule = angular.module('MyApp', ['ja.qr']);
-
-$scope.string = 'YOUR TEXT TO ENCODE';
+var app = angular.module('myApp', ['ja.qr']);
+             app.controller('myCtrl', function($scope) {
+               $scope.string = "http://www.google.com";              
+               });
